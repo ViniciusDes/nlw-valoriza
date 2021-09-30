@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 
-const Middleware = (
+const errorMidleware = (
   err: Error,
   request: Request,
   response: Response,
@@ -19,4 +19,4 @@ const Middleware = (
   });
 };
 
-export { Middleware };
+export { errorMidleware };
