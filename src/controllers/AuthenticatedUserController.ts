@@ -11,7 +11,7 @@ class AuthenticateUserController {
 
     return res.json({
       success: true,
-      dat: [token],
+      datas: [token],
     });
   }
 }

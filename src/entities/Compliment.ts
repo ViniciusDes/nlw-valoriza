@@ -25,7 +25,7 @@ class Compliment {
   @Column()
   user_receiver: string;
 
-  @JoinColumn({ name: "user_receiver" })
+  @JoinColumn({ name: " " })
   @ManyToOne(() => User)
   userReceiver: User;
 
@@ -34,7 +34,7 @@ class Compliment {
 
   @JoinColumn({ name: "id" })
   @ManyToOne(() => Tags)
-  tags: User;
+  tags: Tags;
 
   @Column()
   message: string;
